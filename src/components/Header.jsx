@@ -1,19 +1,40 @@
+import { Link, animateScroll as scroll } from "react-scroll";
+
 const Header = () => {
   return (
     <header className="header">
       <h2>ET</h2>
-      <nav className="navigation">
-        <ul>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
+      <nav className="headerNav">
+        <Link
+          activeClass="active"
+          to="aboutSection"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          About
+        </Link>
+        <Link
+          activeClass="active"
+          to="projectsSection"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          Projects
+        </Link>
+        <Link
+          activeClass="active"
+          to="contactSection"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          Contact
+        </Link>
       </nav>
     </header>
   );

@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { screen, render } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import App from "../../App";
@@ -6,6 +6,16 @@ import LandingPage from "../Landing";
 import About from "../About";
 import Projects from "../Projects";
 import Footer from "../Footer";
+
+vi.mock("react-router-dom", async () => {
+  const actual = await vi.importActual("react-router-dom");
+
+  return {
+    ...actual,
+
+    ScrollRestoration: () => vi.fn(),
+  };
+});
 
 describe("App component", () => {
   it("should render app", () => {
@@ -27,9 +37,9 @@ describe("App component", () => {
     expect(screen.getByRole("heading", { level: 1 }).textContent).toMatch(
       /eddiethiiru/i,
     );
-    expect(screen.getByRole("link", { name: "About" })).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "Projects" })).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "Contact" })).toBeInTheDocument();
+    expect(screen.getByText("About")).toBeInTheDocument();
+    expect(screen.getByText("Projects")).toBeInTheDocument();
+    expect(screen.getByText("Contact")).toBeInTheDocument();
   });
 
   it("should render About section", () => {

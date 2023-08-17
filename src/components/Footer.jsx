@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer>
+    <footer className="contactSection">
       <div className="footerOne">
         <div className="emailWrapper">
           <h2>
