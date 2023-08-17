@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="footerOne">
         <div className="emailWrapper">
           <h2>
-            Let&rsquo;s
+            Let&#39;s
             <br />
             Connect
           </h2>

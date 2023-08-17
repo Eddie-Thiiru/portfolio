@@ -1,19 +1,21 @@
 const ProjectCard = ({ title, description, site, github, imageURL }) => {
-  <div className="projectCard">
-    <header className="projectHeader">
-      <div>
-        <h3>{title}</h3>
-        <p>{description}</p>
+  return (
+    <div className="projectCard">
+      <header className="projectHeader">
+        <div>
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
+        <nav className="projectLinks">
+          <a href={site}>Live Site</a>
+          <a href={github}>Github</a>
+        </nav>
+      </header>
+      <div className="projectImgWrapper">
+        <img src={imageURL} alt="" />
       </div>
-      <nav className="projectLinks">
-        <a href={site}>Live Site</a>
-        <a href={github}>Github</a>
-      </nav>
-    </header>
-    <div className="projectImgWrapper">
-      <img src={imageURL} alt="" />
     </div>
-  </div>;
+  );
 };
 
 const Projects = () => {
