@@ -11,7 +11,7 @@ const Grid = () => {
       </div>
       <div>
         <img src="" alt="" />
-        <p>Jest</p>
+        <p>Vitest</p>
       </div>
       <div>
         <img src="" alt="" />
@@ -42,14 +42,16 @@ const Grid = () => {
 };
 
 const About = () => {
-  <section className="aboutSection">
-    <h2>-About</h2>
-    <p>
-      Hello, I am Eddie, a passionate full stack web developer who loves solving
-      problems and delivering high quality products.
-    </p>
-    <Grid />
-  </section>;
+  return (
+    <section className="aboutSection">
+      <h2>-About</h2>
+      <p>
+        Hello, I am Eddie, a passionate full stack web developer who loves
+        solving problems and delivering high quality products.
+      </p>
+      <Grid />
+    </section>
+  );
 };
 
 export default About;
