@@ -1,0 +1,22 @@
+.aboutSection {
+  display: grid;
+  align-items: center;
+}
+
+.aboutSection p {
+  max-width: 50%;
+  justify-self: center;
+  text-align: center;
+}
+
+.technologiesGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+}
+
+.technologiesGrid > div {
+  height: 120px;
+  width: 120px;
+}

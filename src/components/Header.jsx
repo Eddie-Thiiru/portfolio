@@ -1,8 +1,9 @@
 import { Link, animateScroll as scroll } from "react-scroll";
+import "../styles/Header.css";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="mainHeader">
       <h2>ET</h2>
       <nav className="headerNav">
         <Link

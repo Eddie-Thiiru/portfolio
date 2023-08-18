@@ -1,5 +1,6 @@
 import { ScrollRestoration } from "react-router-dom";
-import LandingPage from "./components/Landing";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
@@ -8,7 +9,8 @@ import "./styles/App.css";
 function App() {
   return (
     <div className="App">
-      <LandingPage />
+      <Header />
+      <Hero />
       <About />
       <Projects />
       <Footer />

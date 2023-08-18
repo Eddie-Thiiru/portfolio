@@ -1,6 +1,15 @@
-const ProjectCard = ({ title, description, site, github, imageURL }) => {
+import "../styles/Projects.css";
+
+const ProjectCard = ({
+  title,
+  description,
+  site,
+  github,
+  imageURL,
+  className,
+}) => {
   return (
-    <div className="projectCard">
+    <div className={className}>
       <header className="projectHeader">
         <div>
           <h3>{title}</h3>
@@ -28,6 +37,7 @@ const Projects = () => {
         site="https://eddie-thiiru-cvbuilder.netlify.app/"
         github=""
         imageURL=""
+        className="project1"
       />
       <ProjectCard
         title="cvBuilder"
@@ -35,6 +45,7 @@ const Projects = () => {
         site="https://eddie-thiiru-cvbuilder.netlify.app/"
         github=""
         imageURL=""
+        className="project2"
       />
       <ProjectCard
         title="cvBuilder"
@@ -42,6 +53,7 @@ const Projects = () => {
         site="https://eddie-thiiru-cvbuilder.netlify.app/"
         github=""
         imageURL=""
+        className="project3"
       />
       <a href="">Explore more</a>
     </section>

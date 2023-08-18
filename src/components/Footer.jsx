@@ -1,3 +1,5 @@
+import "../styles/Footer.css";
+
 const Footer = () => {
   return (
     <footer className="contactSection">
@@ -6,7 +8,7 @@ const Footer = () => {
           <h2>
             Let&#39;s
             <br />
-            Connect
+            Connect.
           </h2>
           <p>eddiewachaga6@gmail.com</p>
         </div>
@@ -24,7 +26,7 @@ const Footer = () => {
               Your message:
               <input type="text" />
             </label>
-            <button type="submit" className="msgBtn">
+            <button type="submit" className="sendBtn">
               Send
             </button>
           </form>
@@ -32,13 +34,13 @@ const Footer = () => {
       </div>
       <div className="footerTwo">
         <nav className="socialLinks">
-          <a>
+          <a href="#">
             <img src="" alt="" />
           </a>
-          <a>
+          <a href="#">
             <img src="" alt="" />
           </a>
-          <a>
+          <a href="#">
             <img src="" alt="" />
           </a>
         </nav>

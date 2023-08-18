@@ -1,0 +1,24 @@
+.heroSection {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.heroSection h1 {
+  font-size: 8rem;
+  align-self: center;
+}
+
+.heroSection p {
+  font-size: 2rem;
+  align-self: self-end;
+}
+
+@media (max-width: 500px) {
+  .heroSection h1 {
+    font-size: 5rem;
+  }
+
+  .heroSection p {
+    font-size: 1.5rem;
+  }
+}

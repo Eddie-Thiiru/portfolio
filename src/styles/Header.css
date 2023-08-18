@@ -1,0 +1,22 @@
+.mainHeader {
+  height: 70px;
+  width: 100%;
+  width: inherit;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #1a1e28;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.headerNav {
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+}
+
+.headerNav a {
+  cursor: pointer;
+}

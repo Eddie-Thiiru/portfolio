@@ -1,3 +1,5 @@
+import "../styles/About.css";
+
 const Grid = () => {
   return (
     <div className="technologiesGrid">
