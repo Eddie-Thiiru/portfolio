@@ -1,3 +1,4 @@
+import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
 import "../styles/Projects.css";
 
 const ProjectCard = ({
@@ -16,8 +17,12 @@ const ProjectCard = ({
           <p>{description}</p>
         </div>
         <nav className="projectLinks">
-          <a href={site}>Live Site</a>
-          <a href={github}>Github</a>
+          <a href={site}>
+            Live Site <FiArrowUpRight />
+          </a>
+          <a href={github}>
+            Github <FiArrowUpRight />
+          </a>
         </nav>
       </header>
       <div className="projectImgWrapper">
@@ -55,7 +60,9 @@ const Projects = () => {
         imageURL=""
         className="project3"
       />
-      <a href="">Explore more</a>
+      <a href="">
+        Explore more <FiArrowRight />
+      </a>
     </section>
   );
 };

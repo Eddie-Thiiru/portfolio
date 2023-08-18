@@ -1,3 +1,5 @@
+import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { FiArrowRight } from "react-icons/fi";
 import "../styles/Footer.css";
 
 const Footer = () => {
@@ -28,6 +30,7 @@ const Footer = () => {
             </label>
             <button type="submit" className="sendBtn">
               Send
+              <FiArrowRight />
             </button>
           </form>
         </div>
@@ -35,13 +38,13 @@ const Footer = () => {
       <div className="footerTwo">
         <nav className="socialLinks">
           <a href="#">
-            <img src="" alt="" />
+            <BsGithub />
           </a>
           <a href="#">
-            <img src="" alt="" />
+            <BsLinkedin />
           </a>
           <a href="#">
-            <img src="" alt="" />
+            <BsTwitter />
           </a>
         </nav>
         <p>copyright</p>
