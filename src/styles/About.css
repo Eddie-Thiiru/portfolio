@@ -16,7 +16,12 @@
   justify-items: center;
 }
 
-.technologiesGrid > div {
+/* .technologiesGrid > div {
   height: 120px;
   width: 120px;
+} */
+
+.technologiesGrid img {
+  height: 70px;
+  width: 70px;
 }
