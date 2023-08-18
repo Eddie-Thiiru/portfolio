@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
 import "../styles/Projects.css";
 
@@ -65,6 +66,15 @@ const Projects = () => {
       </a>
     </section>
   );
+};
+
+ProjectCard.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  site: PropTypes.string,
+  github: PropTypes.string,
+  imageURL: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default Projects;
