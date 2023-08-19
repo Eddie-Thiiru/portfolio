@@ -1,13 +1,14 @@
 .projectsSection {
   display: grid;
-  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, minmax(250px, 30%));
   grid-auto-rows: 1fr;
-  gap: 100px;
+  justify-content: center;
+  gap: 40px;
 }
 
 .projectsSection > div {
-  aspect-ratio: 1;
   padding: 10px;
+  aspect-ratio: 1;
 }
 
 .project1 {
@@ -31,6 +32,17 @@
 .projectsSection a {
   grid-row: 4 / 5;
   align-self: center;
+}
+
+.projectHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.projectLinks {
+  justify-self: end;
+  gap: 5px;
 }
 
 /* @media (max-width: 1200px) {

@@ -15,53 +15,61 @@ import "../styles/About.css";
 const Grid = () => {
   return (
     <div className="technologiesGrid">
-      <div>
-        <img src={htmlLogo} alt="" />
-        <p>HTML</p>
+      <div className="technologiesWrapper">
+        <div>
+          <img src={htmlLogo} alt="" />
+          <p>HTML</p>
+        </div>
+        <div>
+          <img src={cssLogo} alt="" />
+          <p>CSS</p>
+        </div>
+        <div>
+          <img src={jsLogo} alt="" />
+          <p>javaScript</p>
+        </div>
       </div>
-      <div>
-        <img src={cssLogo} alt="" />
-        <p>CSS</p>
+      <div className="technologiesWrapper">
+        <div>
+          <img src={viteLogo} alt="" />
+          <p>Vite</p>
+        </div>
+        <div>
+          <img src={reactLogo} alt="" />
+          <p>React</p>
+        </div>
+        <div>
+          <img src={expressLogo} alt="" />
+          <p>Express.js</p>
+        </div>
       </div>
-      <div>
-        <img src={jsLogo} alt="" />
-        <p>javaScript</p>
+      <div className="technologiesWrapper">
+        <div>
+          <img src={nodeLogo} alt="" />
+          <p>Node.js</p>
+        </div>
+        <div>
+          <img src={vitestLogo} alt="" />
+          <p>Vitest</p>
+        </div>
+        <div>
+          <img src={jestLogo} alt="" />
+          <p>Jest</p>
+        </div>
       </div>
-      <div>
-        <img src={viteLogo} alt="" />
-        <p>Vite</p>
-      </div>
-      <div>
-        <img src={reactLogo} alt="" />
-        <p>React</p>
-      </div>
-      <div>
-        <img src={expressLogo} alt="" />
-        <p>Express.js</p>
-      </div>
-      <div>
-        <img src={nodeLogo} alt="" />
-        <p>Node.js</p>
-      </div>
-      <div>
-        <img src={vitestLogo} alt="" />
-        <p>Vitest</p>
-      </div>
-      <div>
-        <img src={jestLogo} alt="" />
-        <p>Jest</p>
-      </div>
-      <div>
-        <img src={gitLogo} alt="" />
-        <p>Git</p>
-      </div>
-      <div>
-        <img src={webpackLogo} alt="" />
-        <p>Webpack</p>
-      </div>
-      <div>
-        <img src={npmLogo} alt="" />
-        <p>npm</p>
+      <div className="technologiesWrapper">
+        <div>
+          <img src={gitLogo} alt="" />
+          <p>Git</p>
+        </div>
+        <div>
+          <img src={webpackLogo} alt="" />
+          <p>Webpack</p>
+        </div>
+        <div>
+          <img src={npmLogo} alt="" />
+          <p>npm</p>
+        </div>
       </div>
     </div>
   );

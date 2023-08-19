@@ -1,7 +1,7 @@
 .App {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 70px repeat(4, 1fr);
+  /* grid-template-rows: 70px repeat(aut0-fit, minmax(max-content, 1fr)); */
 }
 
 .App > header,
@@ -10,8 +10,15 @@
   grid-column: 2 / 3;
   padding: 10px;
 }
+
+nav {
+  padding: 5px;
+  display: flex;
+}
+
 h1,
 h2,
+h3,
 p,
 a {
   padding: 5px;
@@ -20,7 +27,9 @@ a {
 a {
   font-weight: 500;
   color: #646cff;
-  text-decoration: inherit;
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
 a.active {

@@ -1,19 +1,21 @@
 .heroSection {
+  height: calc(100vh - 70px);
   display: grid;
   grid-template-columns: 2fr 1fr;
+  align-items: center;
 }
 
 .heroSection h1 {
-  font-size: 8rem;
-  align-self: center;
+  font-size: 11vw;
 }
 
-.heroSection p {
+.heroSection h2 {
   font-size: 2rem;
+  justify-self: flex-end;
   align-self: self-end;
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 650px) {
   .heroSection h1 {
     font-size: 5rem;
   }
@@ -21,4 +23,4 @@
   .heroSection p {
     font-size: 1.5rem;
   }
-}
+} */

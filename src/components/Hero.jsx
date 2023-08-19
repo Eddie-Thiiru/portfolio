@@ -8,11 +8,11 @@ const Hero = () => {
         <br />
         Thiiru
       </h1>
-      <p>
+      <h2>
         Full Stack
         <br />
         Developer
-      </p>
+      </h2>
     </section>
   );
 };

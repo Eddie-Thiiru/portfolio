@@ -47,7 +47,6 @@ const Footer = () => {
             <BsTwitter />
           </a>
         </nav>
-        <p>copyright</p>
       </div>
     </footer>
   );

@@ -2,7 +2,8 @@ import { describe, expect, it, vi } from "vitest";
 import { screen, render } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import App from "../../App";
-import LandingPage from "../Landing";
+import Header from "../Header";
+import Hero from "../Hero";
 import About from "../About";
 import Projects from "../Projects";
 import Footer from "../Footer";
@@ -24,22 +25,34 @@ describe("App component", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("should render landing page", () => {
+  it("should render Header", () => {
     render(
       <BrowserRouter>
-        <LandingPage />
+        <Header />
       </BrowserRouter>,
     );
 
-    expect(screen.getByRole("heading", { level: 1 }).textContent).toMatch(
+    expect(screen.getByRole("heading", { level: 2 }).textContent).toMatch(
       /et/i,
-    );
-    expect(screen.getByRole("heading", { level: 1 }).textContent).toMatch(
-      /eddiethiiru/i,
     );
     expect(screen.getByText("About")).toBeInTheDocument();
     expect(screen.getByText("Projects")).toBeInTheDocument();
     expect(screen.getByText("Contact")).toBeInTheDocument();
+  });
+
+  it("should render Hero", () => {
+    render(
+      <BrowserRouter>
+        <Hero />
+      </BrowserRouter>,
+    );
+
+    expect(screen.getByRole("heading", { level: 1 }).textContent).toMatch(
+      /eddiethiiru/i,
+    );
+    expect(screen.getByRole("heading", { level: 2 }).textContent).toMatch(
+      /full stackdeveloper/i,
+    );
   });
 
   it("should render About section", () => {
@@ -80,6 +93,5 @@ describe("App component", () => {
     expect(screen.getByRole("heading").textContent).toMatch(/let'sconnect/i);
     expect(screen.getByRole("button", { name: "Send" })).toBeInTheDocument();
     expect(screen.getByText(/eddiewachaga6@gmail.com/i)).toBeInTheDocument();
-    expect(screen.getByText(/copyright/i)).toBeInTheDocument();
   });
 });
