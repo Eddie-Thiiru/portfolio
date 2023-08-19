@@ -45,27 +45,15 @@
   gap: 5px;
 }
 
-/* @media (max-width: 1200px) {
+@media (max-width: 600px) {
   .projectsSection {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 40px;
   }
 
   .projectsSection > div {
-    height: 200px;
     width: 250px;
-    padding: 10px;
   }
-
-  .project1,
-  .project2,
-  .project3 {
-    background-color: lightblue;
-  }
-
-  .projectsSection a {
-    align-self: center;
-  }
-} */
+}

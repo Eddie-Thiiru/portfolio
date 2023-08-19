@@ -1,7 +1,6 @@
 .heroSection {
-  height: calc(100vh - 70px);
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
   align-items: center;
 }
 
@@ -15,7 +14,13 @@
   align-self: self-end;
 }
 
-/* @media (max-width: 650px) {
+@media (min-width: 1000px) {
+  .heroSection {
+    height: calc(100vh - 70px);
+  }
+}
+
+/* @media (max-width: 600px) {
   .heroSection h1 {
     font-size: 5rem;
   }
