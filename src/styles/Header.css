@@ -1,7 +1,7 @@
 .mainHeader {
   height: 70px;
   width: 100%;
-  width: inherit;
+  --contentWidth: 450px;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -9,6 +9,19 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
+  padding: 10px max(2rem, 50vw - var(--contentWidth) / 2);
+}
+
+@media (min-width: 1024px) {
+  .mainHeader {
+    --contentWidth: 1024px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .mainHeader {
+    --contentWidth: 1440px;
+  }
 }
 
 .headerNav {

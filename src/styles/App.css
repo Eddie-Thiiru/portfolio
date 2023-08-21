@@ -1,18 +1,12 @@
 .App {
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-}
-
-.App > header,
-.App > section,
-.App > footer {
-  grid-column: 2 / 3;
-  padding: 10px;
 }
 
 nav {
   padding: 5px;
   display: flex;
+  justify-content: end;
+  gap: 15px;
 }
 
 h1,

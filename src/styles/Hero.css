@@ -1,7 +1,9 @@
 .heroSection {
+  --contentWidth: 450px;
   display: grid;
   grid-template-rows: 2fr 1fr;
   align-items: center;
+  padding: 10px max(2rem, 50vw - var(--contentWidth) / 2);
 }
 
 .heroSection h1 {
@@ -17,5 +19,15 @@
 @media (min-width: 1024px) {
   .heroSection {
     height: calc(100vh - 70px);
+  }
+
+  .heroSection {
+    --contentWidth: 1024px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .heroSection {
+    --contentWidth: 1440px;
   }
 }

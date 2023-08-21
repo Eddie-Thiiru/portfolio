@@ -1,12 +1,13 @@
 .aboutSection {
+  --contentWidth: 450px;
   min-height: calc(100vh - 70px);
   display: grid;
   justify-items: center;
   align-items: center;
+  padding: 10px max(2rem, 50vw - var(--contentWidth) / 2);
 }
 
 .aboutSection > p {
-  /* width: 50%; */
   width: clamp(30ch, 50%, 75ch);
   justify-self: center;
   text-align: center;
@@ -15,6 +16,7 @@
 .technologiesGrid {
   width: 80%;
   display: flex;
+  flex-direction: column;
 }
 
 .technologiesWrapper {
@@ -23,11 +25,9 @@
   flex-direction: column;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 450px) {
   .technologiesGrid {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
@@ -37,6 +37,18 @@
   flex-direction: column;
   align-items: center;
   gap: 5px;
+}
+
+@media (min-width: 1024px) {
+  .aboutSection {
+    --contentWidth: 1024px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .aboutSection {
+    --contentWidth: 1440px;
+  }
 }
 
 .technologiesGrid img {
