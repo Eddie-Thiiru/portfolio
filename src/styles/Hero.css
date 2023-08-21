@@ -1,5 +1,6 @@
 .heroSection {
   --contentWidth: 450px;
+  background-color: #1f2632;
   display: grid;
   grid-template-rows: 2fr 1fr;
   align-items: center;

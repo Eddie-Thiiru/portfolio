@@ -8,6 +8,8 @@ body {
   min-height: 100vh;
   min-width: 320px;
   font-size: 1rem;
+  color: #f9fafb;
+  background-color: #212934;
 }
 
 #root {

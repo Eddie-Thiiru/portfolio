@@ -48,7 +48,12 @@ label {
 
 input {
   font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #2b3544;
+  margin-top: 10px;
   padding-top: 5px;
+  color: #f9fafb;
+  background-color: #212934;
 }
 
 @media (min-width: 1024px) {
@@ -79,11 +84,15 @@ input {
   height: 40px;
   width: 40px;
   border-radius: 50px;
-  background-color: aqua;
+  background-color: #1f2632;
   justify-content: center;
 }
 
 .socialLinks svg {
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
+}
+
+input:focus {
+  outline-color: aqua;
 }
