@@ -4,7 +4,7 @@
   display: grid;
   justify-items: center;
   align-items: center;
-  padding: 10px max(2rem, 50vw - var(--contentWidth) / 2);
+  padding: 50px max(2rem, 50vw - var(--contentWidth) / 2);
 }
 
 .aboutSection > p {
@@ -48,6 +48,7 @@
 @media (min-width: 1440px) {
   .aboutSection {
     --contentWidth: 1440px;
+    align-items: start;
   }
 }
 

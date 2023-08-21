@@ -6,7 +6,7 @@
   display: grid;
   grid-template-rows: 2fr 1fr;
   align-items: center;
-  padding: 10px max(2rem, 50vw - var(--contentWidth) / 2);
+  padding: 25px max(2rem, 50vw - var(--contentWidth) / 2);
 }
 
 .heroSection h1 {

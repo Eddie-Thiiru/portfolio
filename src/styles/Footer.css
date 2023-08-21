@@ -2,13 +2,12 @@
   --contentWidth: 450px;
   display: flex;
   flex-direction: column;
-  padding: 10px max(2rem, 50vw - var(--contentWidth) / 2);
+  padding: 50px max(2rem, 50vw - var(--contentWidth) / 2);
 }
 
 .footerOne {
   flex: 1;
   display: flex;
-  padding: 50px 0px;
   align-items: center;
   flex-wrap: wrap;
   gap: 50px;
@@ -56,6 +55,11 @@ input {
   background-color: #212934;
 }
 
+.emailWrapper h2,
+.emailWrapper p {
+  min-width: 215px;
+}
+
 @media (min-width: 1024px) {
   .contactSection {
     --contentWidth: 1024px;
@@ -77,7 +81,7 @@ input {
 }
 
 .contactSection h2 {
-  font-size: clamp(3rem, 4vw, 6rem);
+  font-size: clamp(2.5rem, 4vw, 6rem);
 }
 
 .contactSection p {
