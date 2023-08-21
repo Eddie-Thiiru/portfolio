@@ -1,7 +1,6 @@
 .App {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  /* grid-template-rows: 70px repeat(aut0-fit, minmax(max-content, 1fr)); */
 }
 
 .App > header,
@@ -22,6 +21,14 @@ h3,
 p,
 a {
   padding: 5px;
+}
+
+h2 {
+  font-size: clamp(1.25rem, 2vw, 2rem);
+}
+
+h3 {
+  font-size: clamp(1.125rem, 1.3vw, 1.5rem);
 }
 
 a {

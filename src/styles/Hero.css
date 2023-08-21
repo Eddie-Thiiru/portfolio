@@ -5,27 +5,17 @@
 }
 
 .heroSection h1 {
-  font-size: 11vw;
+  font-size: clamp(4rem, 10vw, 12rem);
 }
 
 .heroSection h2 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3.5vw, 3.75rem);
   justify-self: flex-end;
   align-self: self-end;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .heroSection {
     height: calc(100vh - 70px);
   }
 }
-
-/* @media (max-width: 600px) {
-  .heroSection h1 {
-    font-size: 5rem;
-  }
-
-  .heroSection p {
-    font-size: 1.5rem;
-  }
-} */

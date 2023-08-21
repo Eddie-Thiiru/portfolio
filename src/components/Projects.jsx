@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { BsGithub } from "react-icons/bs";
 import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
 import "../styles/Projects.css";
 
@@ -18,11 +19,11 @@ const ProjectCard = ({
           <p>{description}</p>
         </div>
         <nav className="projectLinks">
-          <a href={site}>
-            Live Site <FiArrowUpRight />
+          <a href={github} title="Live Site">
+            <FiArrowUpRight />
           </a>
-          <a href={github}>
-            Github <FiArrowUpRight />
+          <a href={site} title="Github">
+            <BsGithub />
           </a>
         </nav>
       </header>

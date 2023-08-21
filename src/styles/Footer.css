@@ -45,9 +45,14 @@ label {
 }
 
 input {
-  max-width: 250px;
-  font-size: 0.875rem;
-  padding-top: 10px;
+  font-size: 1rem;
+  padding-top: 5px;
+}
+
+@media (min-width: 1024px) {
+  input {
+    width: 300px;
+  }
 }
 
 .socialLinks {
@@ -55,18 +60,18 @@ input {
 }
 
 .contactSection h2 {
-  font-size: 4rem;
+  font-size: clamp(3rem, 4vw, 6rem);
 }
 
 .socialLinks a {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   border-radius: 50px;
   background-color: aqua;
   justify-content: center;
 }
 
 .socialLinks svg {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
 }

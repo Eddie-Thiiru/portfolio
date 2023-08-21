@@ -37,13 +37,13 @@ const Footer = () => {
       </div>
       <div className="footerTwo">
         <nav className="socialLinks">
-          <a href="#">
+          <a href="#" title="Github">
             <BsGithub />
           </a>
-          <a href="#">
+          <a href="#" title="LinkedIn">
             <BsLinkedin />
           </a>
-          <a href="#">
+          <a href="#" title="Twitter">
             <BsTwitter />
           </a>
         </nav>
