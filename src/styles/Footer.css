@@ -80,6 +80,10 @@ input {
   font-size: clamp(3rem, 4vw, 6rem);
 }
 
+.contactSection p {
+  color: #646cff;
+}
+
 .socialLinks a {
   height: 40px;
   width: 40px;

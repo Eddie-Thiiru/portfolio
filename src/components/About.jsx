@@ -78,7 +78,7 @@ const Grid = () => {
 const About = () => {
   return (
     <section className="aboutSection">
-      <h2>-About</h2>
+      <h2>About</h2>
       <p>
         Hello, I am Eddie, a passionate full stack web developer who loves
         solving problems and delivering high quality products.

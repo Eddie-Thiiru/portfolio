@@ -35,8 +35,13 @@
   align-items: start;
 }
 
+.projectsSection h2 {
+  color: #596e90;
+}
+
 .projectHeader p {
   font-size: 0.875rem;
+  color: #868f9d;
 }
 
 .projectsSection a {
@@ -49,6 +54,7 @@
   height: 30px;
   width: 30px;
   border-radius: 50px;
+  color: #1a2029;
   background-color: white;
   justify-content: center;
 }

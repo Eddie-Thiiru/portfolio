@@ -6,7 +6,7 @@ const Hero = () => {
       <h1>
         Eddie
         <br />
-        Thiiru
+        <span>Thiiru.</span>
       </h1>
       <h2>
         Full Stack

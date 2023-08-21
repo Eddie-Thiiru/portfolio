@@ -51,6 +51,10 @@
   }
 }
 
+.aboutSection h2 {
+  color: #596e90;
+}
+
 .technologiesGrid img {
   width: 70px;
 }

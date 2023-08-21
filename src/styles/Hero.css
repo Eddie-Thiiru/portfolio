@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 .heroSection {
   --contentWidth: 450px;
   background-color: #1f2632;
@@ -8,13 +10,21 @@
 }
 
 .heroSection h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   font-size: clamp(4rem, 10vw, 12rem);
+  line-height: 1;
 }
 
 .heroSection h2 {
   font-size: clamp(1.5rem, 3.5vw, 3.75rem);
+  line-height: 1;
   justify-self: flex-end;
   align-self: self-end;
+}
+
+.heroSection span {
+  color: #596e90;
 }
 
 @media (min-width: 1024px) {

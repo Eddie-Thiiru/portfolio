@@ -37,7 +37,7 @@ const ProjectCard = ({
 const Projects = () => {
   return (
     <section className="projectsSection">
-      <h2>-Projects</h2>
+      <h2>Projects</h2>
       <ProjectCard
         title="cvBuilder"
         description="Online CV builder app"
