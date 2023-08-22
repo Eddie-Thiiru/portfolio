@@ -5,8 +5,17 @@
   background-color: #1f2632;
   display: grid;
   grid-template-rows: 2fr 1fr;
-  align-items: center;
   padding: 25px max(2rem, 50vw - var(--contentWidth) / 2);
+}
+
+.heroSection > div {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.heroSection nav {
+  justify-self: start;
+  align-self: center;
 }
 
 .heroSection h1 {
@@ -14,14 +23,19 @@
   font-weight: 700;
   font-size: clamp(4rem, 10vw, 12rem);
   line-height: 1;
+  align-self: center;
 }
 
 .heroSection h2 {
   font-size: clamp(1.5rem, 3.5vw, 3.75rem);
   line-height: 1;
-  justify-self: flex-end;
-  align-self: self-end;
+  justify-self: end;
+  align-self: end;
 }
+
+/* .socialLinks.heroSocialLinks a {
+  background-color: #1a2029;
+} */
 
 .heroSection span {
   color: #596e90;

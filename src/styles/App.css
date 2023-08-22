@@ -9,6 +9,23 @@ nav {
   gap: 15px;
 }
 
+.socialLinks {
+  gap: 10px;
+}
+
+.socialLinks a {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  background-color: #1f2632;
+  justify-content: center;
+}
+
+.socialLinks svg {
+  height: 18px;
+  width: 18px;
+}
+
 h1,
 h2,
 h3,
@@ -34,5 +51,5 @@ a {
 }
 
 a.active {
-  color: red;
+  color: #ff1a1a;
 }
