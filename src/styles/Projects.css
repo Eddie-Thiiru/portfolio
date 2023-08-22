@@ -78,7 +78,7 @@
   width: 30px;
   border-radius: 50px;
   color: #1a2029;
-  background-color: white;
+  background-color: #f9fafb;
   justify-content: center;
 }
 
@@ -126,4 +126,16 @@
     height: 25px;
     width: 25px;
   }
+}
+
+.projectsSection a:hover {
+  color: #0c66f6;
+}
+
+.projectLinks a[title="Github"]:hover {
+  background-color: #f9fafb;
+}
+
+.project:hover {
+  transform: scale(1.1);
 }

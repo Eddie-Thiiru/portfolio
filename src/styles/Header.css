@@ -35,3 +35,7 @@
 .headerNav a {
   cursor: pointer;
 }
+
+.headerNav a:hover {
+  color: #0c66f6;
+}

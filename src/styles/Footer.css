@@ -87,6 +87,18 @@ input {
   color: #646cff;
 }
 
+.contactSection a {
+  background-color: #1a2029;
+}
+
 input:focus {
-  outline-color: aqua;
+  outline: none;
+}
+
+label:focus-within {
+  color: #596e90;
+}
+
+.sendBtn:hover {
+  background-color: #b3b3b3;
 }
