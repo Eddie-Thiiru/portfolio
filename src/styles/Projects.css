@@ -16,6 +16,7 @@
 .project {
   display: flex;
   flex-direction: column;
+  transition: transform 0.2s ease-in-out;
 }
 
 .project1 {
@@ -70,7 +71,9 @@
 .projectsSection a {
   grid-row: 4 / 5;
   color: #646cff;
+  justify-self: start;
   align-self: center;
+  transition: color 0.2s ease-in-out;
 }
 
 .projectLinks a {

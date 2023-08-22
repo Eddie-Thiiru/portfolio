@@ -62,7 +62,7 @@ describe("App component", () => {
       </BrowserRouter>,
     );
 
-    expect(screen.getByRole("heading", { name: "-About" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "About" })).toBeInTheDocument();
   });
 
   it("should render projects section", () => {
@@ -73,7 +73,7 @@ describe("App component", () => {
     );
 
     expect(
-      screen.getByRole("heading", { name: "-Projects" }),
+      screen.getByRole("heading", { name: "Projects" }),
     ).toBeInTheDocument();
     expect(screen.getAllByRole("heading", { level: 3 })).toHaveLength(3);
     expect(screen.getAllByRole("link", { name: "Live Site" })).toHaveLength(3);

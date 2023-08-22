@@ -47,6 +47,7 @@ a {
   width: 45px;
   border-radius: 50px;
   justify-content: center;
+  transition: background-color 0.2s ease-in-out;
 }
 
 a[title="Github"]:hover {
