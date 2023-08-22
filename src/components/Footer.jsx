@@ -37,7 +37,7 @@ const Footer = () => {
       </div>
       <div className="footerTwo">
         <nav className="socialLinks">
-          <a href="#" title="Github">
+          <a href="https://github.com/Eddie-Thiiru" title="Github">
             <BsGithub />
           </a>
           <a href="#" title="LinkedIn">

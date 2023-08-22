@@ -9,7 +9,7 @@ import "../styles/Projects.css";
 const ProjectCard = ({
   title,
   description,
-  site,
+  liveSite,
   github,
   imageURL,
   className,
@@ -22,10 +22,10 @@ const ProjectCard = ({
           <p>{description}</p>
         </div>
         <nav className="projectLinks">
-          <a href={github} title="Live Site">
+          <a href={liveSite} title="Live Site">
             <FiArrowUpRight />
           </a>
-          <a href={site} title="Github">
+          <a href={github} title="Github">
             <BsGithub />
           </a>
         </nav>
@@ -45,28 +45,28 @@ const Projects = () => {
       <ProjectCard
         title="Game Vault"
         description="Video game store"
-        site=""
-        github=""
+        liveSite=""
+        github="https://github.com/Eddie-Thiiru/shopping-cart"
         imageURL={vaultImg}
         className="project1"
       />
       <ProjectCard
         title="cvBuilder"
         description="Online CV builder app"
-        site="https://eddie-thiiru-cvbuilder.netlify.app/"
-        github=""
+        liveSite="https://eddie-thiiru-cvbuilder.netlify.app/"
+        github="https://github.com/Eddie-Thiiru/cv-application"
         imageURL={cvImg}
         className="project2"
       />
       <ProjectCard
         title="ToDo Tasks"
         description="To-do list app"
-        site=""
-        github=""
+        liveSite=""
+        github="https://github.com/Eddie-Thiiru/todo-list"
         imageURL={todoImg}
         className="project3"
       />
-      <a href="">
+      <a href="https://github.com/Eddie-Thiiru?tab=repositories">
         Explore more <FiArrowRight />
       </a>
     </section>
@@ -76,7 +76,7 @@ const Projects = () => {
 ProjectCard.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  site: PropTypes.string,
+  liveSite: PropTypes.string,
   github: PropTypes.string,
   imageURL: PropTypes.string,
   className: PropTypes.string,

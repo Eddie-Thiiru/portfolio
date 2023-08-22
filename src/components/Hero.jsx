@@ -11,7 +11,7 @@ const Hero = () => {
       </h1>
       <div>
         <nav className="socialLinks heroSocialLinks">
-          <a href="#" title="Github">
+          <a href="https://github.com/Eddie-Thiiru" title="Github">
             <BsGithub />
           </a>
           <a href="#" title="LinkedIn">
