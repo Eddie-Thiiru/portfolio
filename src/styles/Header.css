@@ -28,6 +28,10 @@
   gap: 10px;
 }
 
+.mainHeader h2 {
+  color: #085be1;
+}
+
 .headerNav a {
   cursor: pointer;
 }
