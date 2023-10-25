@@ -2,7 +2,7 @@
   --contentWidth: 450px;
   display: flex;
   flex-direction: column;
-  padding: 50px max(2rem, 50vw - var(--contentWidth) / 2);
+  padding: 100px max(2rem, 50vw - var(--contentWidth) / 2);
 }
 
 .footerOne {
@@ -21,48 +21,41 @@
 }
 
 .footerTwo {
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-form,
-label {
-  display: flex;
-  flex-direction: column;
-}
-
-.sendBtn {
-  font-size: 1rem;
-  border: none;
-  border-radius: 2px;
-  margin: 20px 10px;
-  padding: 6px;
-  display: flex;
-  align-items: center;
-  align-self: flex-start;
-  gap: 5px;
-  transition: background-color 0.2s ease-in-out;
-}
-
-label {
+.copyrightContainer {
   padding: 10px;
-  transition: color 0.2s ease-in;
-}
-
-input {
-  font-size: 1rem;
-  border: none;
-  border-bottom: 2px solid #2b3544;
-  margin-top: 10px;
-  padding-top: 5px;
-  color: #f9fafb;
-  background-color: #212934;
+  display: flex;
+  justify-content: center;
 }
 
 .emailWrapper h2,
 .emailWrapper p {
   min-width: 215px;
+}
+
+.emailWrapper h2 {
+  font-size: clamp(2.5rem, 3.5vw, 6rem);
+  text-align: center;
+}
+
+.emailWrapper p {
+  color: #596e90;
+  font-size: clamp(1rem, 2vw, 4rem);
+}
+
+.copyrightContainer p,
+.copyrightContainer span {
+  display: flex;
+  align-items: center;
+}
+
+.contactSection a {
+  background-color: #1a2029;
 }
 
 @media (min-width: 1024px) {
@@ -79,28 +72,4 @@ input {
   .contactSection {
     --contentWidth: 1440px;
   }
-}
-
-.contactSection h2 {
-  font-size: clamp(2.5rem, 4vw, 6rem);
-}
-
-.contactSection p {
-  color: #646cff;
-}
-
-.contactSection a {
-  background-color: #1a2029;
-}
-
-input:focus {
-  outline: none;
-}
-
-label:focus-within {
-  color: #596e90;
-}
-
-.sendBtn:hover {
-  background-color: #b3b3b3;
 }
