@@ -34,6 +34,16 @@
   grid-row: 3 / 5;
 }
 
+.project4 {
+  grid-column: 1 / 2;
+  grid-row: 4 / 6;
+}
+
+.project5 {
+  grid-column: 2 / 3;
+  grid-row: 5 / 7;
+}
+
 .projectHeader {
   padding: 10px;
   display: grid;
@@ -69,7 +79,7 @@
 }
 
 .projectsSection a {
-  grid-row: 4 / 5;
+  grid-row: 6 / 7;
   color: #646cff;
   justify-self: start;
   align-self: center;

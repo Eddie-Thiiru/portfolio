@@ -1,9 +1,11 @@
 import PropTypes from "prop-types";
 import { BsGithub } from "react-icons/bs";
 import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
+import odinBookImg from "../images/odin-book-screenshot.png";
 import vaultImg from "../images/game-store-screenshot.png";
 import cvImg from "../images/cvBuilder-screenshot.png";
-import todoImg from "../images/todo-list-screenshot.png";
+import photoTagImg from "../images/photo-tag-screenshot.png";
+import weatherImg from "../images/weather-app-screenshot.png";
 import "../styles/Projects.css";
 
 const ProjectCard = ({
@@ -43,12 +45,20 @@ const Projects = () => {
     <section className="projectsSection">
       <h2>Projects</h2>
       <ProjectCard
+        title="Odinbook"
+        description="A Facebook clone"
+        liveSite="https://odin-app.netlify.app/login"
+        github="https://github.com/Eddie-Thiiru/odin-book"
+        imageURL={odinBookImg}
+        className="project1"
+      />
+      <ProjectCard
         title="Game Vault"
         description="Video game store"
-        liveSite=""
+        liveSite="https://eddie-thiiru-shopping-cart.netlify.app/"
         github="https://github.com/Eddie-Thiiru/shopping-cart"
         imageURL={vaultImg}
-        className="project1"
+        className="project2"
       />
       <ProjectCard
         title="cvBuilder"
@@ -56,15 +66,23 @@ const Projects = () => {
         liveSite="https://eddie-thiiru-cvbuilder.netlify.app/"
         github="https://github.com/Eddie-Thiiru/cv-application"
         imageURL={cvImg}
-        className="project2"
+        className="project3"
       />
       <ProjectCard
-        title="ToDo Tasks"
-        description="To-do list app"
-        liveSite=""
-        github="https://github.com/Eddie-Thiiru/todo-list"
-        imageURL={todoImg}
-        className="project3"
+        title="photoTag"
+        description="A Photo Tagging app"
+        liveSite="https://photo-tag-find.netlify.app"
+        github="https://github.com/Eddie-Thiiru/where-is-waldo"
+        imageURL={photoTagImg}
+        className="project4"
+      />
+      <ProjectCard
+        title="Everyday Weather"
+        description="A weather app"
+        liveSite="https://everyday-weather.netlify.app/"
+        github="https://github.com/Eddie-Thiiru/weather-app"
+        imageURL={weatherImg}
+        className="project5"
       />
       <a href="https://github.com/Eddie-Thiiru?tab=repositories">
         Explore more <FiArrowRight />

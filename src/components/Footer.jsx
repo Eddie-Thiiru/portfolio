@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="contactSection">
       <div className="footerOne">
         <div className="emailWrapper">
-          <h2>Want To Get In Touch?</h2>
+          <h2>Let&rsquo;s connect.</h2>
           <p>eddiewachaga6@gmail.com</p>
         </div>
       </div>
