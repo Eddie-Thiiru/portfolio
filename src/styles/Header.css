@@ -12,6 +12,43 @@
   padding: 10px max(2rem, 50vw - var(--contentWidth) / 2);
 }
 
+.siteLogo {
+  height: 38px;
+  width: 38px;
+  border-radius: 5px;
+  background: linear-gradient(
+    to right bottom,
+    rgb(93, 141, 245),
+    rgb(156, 190, 246)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.headerNav {
+  gap: 10px;
+}
+
+.siteLogo a {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.siteLogo a.active {
+  color: #f9fafb;
+}
+
+.headerNav a {
+  cursor: pointer;
+  transition: color 0.2s ease-in;
+}
+
+.headerNav a:hover {
+  color: #0c66f6;
+}
+
 @media (min-width: 1024px) {
   .mainHeader {
     --contentWidth: 1024px;
@@ -22,21 +59,4 @@
   .mainHeader {
     --contentWidth: 1440px;
   }
-}
-
-.headerNav {
-  gap: 10px;
-}
-
-.mainHeader h2 {
-  color: #085be1;
-}
-
-.headerNav a {
-  cursor: pointer;
-  transition: color 0.2s ease-in;
-}
-
-.headerNav a:hover {
-  color: #0c66f6;
 }

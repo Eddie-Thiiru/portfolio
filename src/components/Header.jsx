@@ -1,10 +1,21 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import "../styles/Header.css";
 
 const Header = () => {
   return (
     <header className="mainHeader">
-      <h2>ET</h2>
+      <div className="siteLogo">
+        <Link
+          activeClass="active"
+          to="heroSection"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          E
+        </Link>
+      </div>
       <nav className="headerNav">
         <Link
           activeClass="active"
