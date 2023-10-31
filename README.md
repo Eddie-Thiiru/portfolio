@@ -1,5 +1,7 @@
 # Personal Portfolio
 
+[Live](https://eddiethiiru.netlify.app/) :point_left:
+
 # Built With
 
 - [Vite + React](https://vitejs.dev/)
