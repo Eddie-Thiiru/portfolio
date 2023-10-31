@@ -39,11 +39,8 @@
 
 @media (min-width: 1024px) {
   .heroSection {
-    height: calc(100vh - 70px);
-  }
-
-  .heroSection {
     --contentWidth: 1024px;
+    height: calc(100vh - 70px);
   }
 }
 

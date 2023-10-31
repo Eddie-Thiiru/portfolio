@@ -5,7 +5,7 @@ import odinBookImg from "../images/odin-book-screenshot.png";
 import vaultImg from "../images/game-store-screenshot.png";
 import cvImg from "../images/cvBuilder-screenshot.png";
 import photoTagImg from "../images/photo-tag-screenshot.png";
-import weatherImg from "../images/weather-app-screenshot.png";
+import membersClubImg from "../images/members-only-screenshot.png";
 import "../styles/Projects.css";
 
 const ProjectCard = ({
@@ -77,11 +77,11 @@ const Projects = () => {
         className="project4"
       />
       <ProjectCard
-        title="Everyday Weather"
-        description="A weather app"
-        liveSite="https://everyday-weather.netlify.app/"
-        github="https://github.com/Eddie-Thiiru/weather-app"
-        imageURL={weatherImg}
+        title="Only Members"
+        description="A message board website"
+        liveSite="https://only-members-club.fly.dev/"
+        github="https://github.com/Eddie-Thiiru/members-only"
+        imageURL={membersClubImg}
         className="project5"
       />
       <a href="https://github.com/Eddie-Thiiru?tab=repositories">

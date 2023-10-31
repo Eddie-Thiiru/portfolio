@@ -39,13 +39,13 @@
 }
 
 .emailWrapper h2 {
-  font-size: clamp(2.5rem, 3.5vw, 6rem);
+  font-size: clamp(2.5rem, 3.5vw, 4rem);
   text-align: center;
 }
 
 .emailWrapper p {
   color: #596e90;
-  font-size: clamp(1rem, 2vw, 4rem);
+  font-size: clamp(1rem, 2vw, 3rem);
 }
 
 .copyrightContainer p,

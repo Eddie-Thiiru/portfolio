@@ -106,18 +106,13 @@
   width: 15px;
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .projectsSection {
+    --contentWidth: 1024px;
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 30%));
     grid-auto-rows: 1fr;
     justify-content: center;
-  }
-}
-
-@media (min-width: 1024px) {
-  .projectsSection {
-    --contentWidth: 1024px;
   }
 
   .projectHeader p {
