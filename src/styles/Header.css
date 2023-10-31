@@ -28,7 +28,73 @@
 }
 
 .headerNav {
+  flex: 1;
   gap: 10px;
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
+.hamburgerMenu.menuActive {
+  width: 60%;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  animation: expand 500ms ease-in-out;
+  transform-origin: right;
+}
+
+@keyframes expand {
+  0% {
+    transform: scaleX(0);
+  }
+
+  70% {
+    transform: scaleX(1.1);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.hamburgerMenu .headerNav {
+  background: linear-gradient(
+    to right bottom,
+    rgb(89, 110, 144),
+    rgb(31, 38, 50)
+  );
+  flex-direction: column;
+  justify-content: start;
+  padding: 20px;
+}
+
+.menuBtn,
+.closeMenuBtn {
+  border: none;
+  background-color: #272f3e;
+  height: 35px;
+  width: 35px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.closeMenuBtn {
+  margin-top: 20px;
+  animation: rotate 500ms ease-in-out 200ms;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .siteLogo a {
@@ -49,6 +115,13 @@
   color: #0c66f6;
 }
 
+.menuBtn svg,
+.closeMenuBtn svg {
+  height: 30px;
+  width: 30px;
+  color: #f9fafb;
+}
+
 @media (min-width: 1024px) {
   .mainHeader {
     --contentWidth: 1024px;
@@ -58,5 +131,17 @@
 @media (min-width: 1440px) {
   .mainHeader {
     --contentWidth: 1440px;
+  }
+}
+
+@media (max-width: 700px) {
+  .navContainer {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+    justify-content: end;
+    gap: 7px;
   }
 }
