@@ -16,7 +16,10 @@ const Footer = () => {
           <a href="https://github.com/Eddie-Thiiru" title="Github">
             <BsGithub />
           </a>
-          <a href="#" title="LinkedIn">
+          <a
+            href="https://www.linkedin.com/in/eddie-wachaga-853525a8"
+            title="LinkedIn"
+          >
             <BsLinkedin />
           </a>
           <a href="#" title="Twitter">
