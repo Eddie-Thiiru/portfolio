@@ -55,7 +55,7 @@ const Projects = () => {
       <ProjectCard
         title="Game Vault"
         description="Video game store"
-        liveSite="https://eddie-thiiru-shopping-cart.netlify.app/"
+        liveSite="https://game-vault-shopping-cart.netlify.app"
         github="https://github.com/Eddie-Thiiru/shopping-cart"
         imageURL={vaultImg}
         className="project2"
