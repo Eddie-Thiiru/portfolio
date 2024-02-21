@@ -3,6 +3,10 @@ import { BiCopyright } from "react-icons/bi";
 import "../styles/Footer.css";
 
 const Footer = () => {
+  const getCurrentYear = () => {
+    return new Date().getFullYear();
+  };
+
   return (
     <footer className="contactSection">
       <div className="footerOne">
@@ -31,7 +35,7 @@ const Footer = () => {
         <span>
           <BiCopyright />
         </span>
-        <p>2023 - Eddie Thiiru</p>
+        <p>{getCurrentYear()} - Eddie Thiiru</p>
       </div>
     </footer>
   );
