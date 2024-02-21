@@ -29,6 +29,11 @@ const Hero = () => {
           <br />
           Developer
         </h2>
+        <div className="scrollDownPrompt">
+          <span className="promptArrow"></span>
+          <span className="promptArrow"></span>
+          <span className="promptArrow"></span>
+        </div>
       </div>
     </section>
   );
