@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import "../styles/Hero.css";
 
@@ -29,11 +30,19 @@ const Hero = () => {
           <br />
           Developer
         </h2>
-        <div className="scrollDownPrompt">
+        <Link
+          className="scrollDownPrompt"
+          activeClass="active"
+          to="aboutSection"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
           <span className="promptArrow"></span>
           <span className="promptArrow"></span>
           <span className="promptArrow"></span>
-        </div>
+        </Link>
       </div>
     </section>
   );
