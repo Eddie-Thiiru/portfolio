@@ -1,11 +1,11 @@
 .projectsSection {
-  --contentWidth: 450px;
+  --contentWidth: 1250px;
   background-color: #1f2632;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  padding: 50px max(2rem, 50vw - var(--contentWidth) / 2);
+  padding: 50px max(1rem, 50vw - var(--contentWidth) / 2);
 }
 
 .projectsSection > div {
@@ -47,7 +47,7 @@
 .projectHeader {
   padding: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr max-content;
   align-items: start;
 }
 
@@ -87,12 +87,17 @@
 }
 
 .projectLinks a {
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   border-radius: 50px;
   color: #1a2029;
   background-color: #f9fafb;
   justify-content: center;
+}
+
+.exploreMoreLink {
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .projectImgWrapper img {
@@ -102,15 +107,24 @@
 }
 
 .projectLinks svg {
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 500px) {
+  .project {
+    width: 60%;
+  }
+}
+
+@media (min-width: 850px) {
+  .project {
+    width: 100%;
+  }
+
   .projectsSection {
-    --contentWidth: 1024px;
     display: grid;
-    grid-template-columns: repeat(2, minmax(250px, 30%));
+    grid-template-columns: repeat(2, minmax(250px, 40%));
     grid-auto-rows: 1fr;
     justify-content: center;
   }
@@ -120,30 +134,16 @@
   }
 }
 
-@media (min-width: 1440px) {
-  .projectsSection {
-    --contentWidth: 1440px;
+@media (hover: hover) {
+  .projectsSection a:hover {
+    color: #0c66f6;
   }
 
-  .projectLinks a {
-    height: 40px;
-    width: 40px;
+  .projectLinks a[title="Github"]:hover {
+    background-color: #f9fafb;
   }
 
-  .projectLinks svg {
-    height: 25px;
-    width: 25px;
+  .project:hover {
+    transform: scale(1.1);
   }
-}
-
-.projectsSection a:hover {
-  color: #0c66f6;
-}
-
-.projectLinks a[title="Github"]:hover {
-  background-color: #f9fafb;
-}
-
-.project:hover {
-  transform: scale(1.1);
 }

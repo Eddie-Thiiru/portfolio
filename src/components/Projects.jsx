@@ -84,7 +84,10 @@ const Projects = () => {
         imageURL={membersClubImg}
         className="project5"
       />
-      <a href="https://github.com/Eddie-Thiiru?tab=repositories">
+      <a
+        href="https://github.com/Eddie-Thiiru?tab=repositories"
+        className="exploreMoreLink"
+      >
         Explore more <FiArrowRight />
       </a>
     </section>

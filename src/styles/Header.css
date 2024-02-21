@@ -1,7 +1,7 @@
 .mainHeader {
   height: 70px;
   width: 100%;
-  --contentWidth: 450px;
+  --contentWidth: 1250px;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
-  padding: 10px max(2rem, 50vw - var(--contentWidth) / 2);
+  padding: 10px max(1rem, 50vw - var(--contentWidth) / 2);
 }
 
 .siteLogo {
@@ -29,7 +29,6 @@
 
 .headerNav {
   flex: 1;
-  gap: 10px;
 }
 
 .hamburgerMenu {
@@ -111,27 +110,11 @@
   transition: color 0.2s ease-in;
 }
 
-.headerNav a:hover {
-  color: #0c66f6;
-}
-
 .menuBtn svg,
 .closeMenuBtn svg {
   height: 30px;
   width: 30px;
   color: #f9fafb;
-}
-
-@media (min-width: 1024px) {
-  .mainHeader {
-    --contentWidth: 1024px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .mainHeader {
-    --contentWidth: 1440px;
-  }
 }
 
 @media (max-width: 700px) {
@@ -143,5 +126,11 @@
     display: flex;
     justify-content: end;
     gap: 7px;
+  }
+}
+
+@media (hover: hover) {
+  .headerNav a:hover {
+    color: #0c66f6;
   }
 }

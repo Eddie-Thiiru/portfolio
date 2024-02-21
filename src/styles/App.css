@@ -19,7 +19,7 @@ h2,
 h3,
 p,
 a {
-  padding: 5px;
+  padding: 5px 0px;
 }
 
 h2 {
@@ -51,16 +51,18 @@ a {
   transition: background-color 0.2s ease-in-out;
 }
 
-a[title="Github"]:hover {
-  background-color: #8241f9;
-}
+@media (hover: hover) {
+  a[title="Github"]:hover {
+    background-color: #8241f9;
+  }
 
-a[title="LinkedIn"]:hover {
-  background-color: #0a66c2;
-}
+  a[title="LinkedIn"]:hover {
+    background-color: #0a66c2;
+  }
 
-a[title="Twitter"]:hover {
-  background-color: #1da1f2;
+  a[title="Twitter"]:hover {
+    background-color: #1da1f2;
+  }
 }
 
 a.active {

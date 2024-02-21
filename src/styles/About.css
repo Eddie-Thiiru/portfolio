@@ -1,9 +1,9 @@
 .aboutSection {
-  --contentWidth: 450px;
+  --contentWidth: 1250px;
   display: grid;
   justify-items: center;
   align-items: center;
-  padding: 50px max(2rem, 50vw - var(--contentWidth) / 2);
+  padding: 50px max(1rem, 50vw - var(--contentWidth) / 2);
 }
 
 .aboutSection > p {
@@ -48,7 +48,6 @@
 
 @media (min-width: 1024px) {
   .aboutSection {
-    --contentWidth: 1024px;
     height: calc(100vh - 70px);
   }
 
@@ -58,12 +57,5 @@
 
   .technologiesGrid img {
     width: 70px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .aboutSection {
-    --contentWidth: 1440px;
-    align-items: start;
   }
 }

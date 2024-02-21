@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .heroSection {
-  --contentWidth: 450px;
+  --contentWidth: 1250px;
   background-color: #1f2632;
   display: grid;
   grid-template-rows: 2fr 1fr;
-  padding: 25px max(2rem, 50vw - var(--contentWidth) / 2);
+  padding: 25px max(1rem, 50vw - var(--contentWidth) / 2);
 }
 
 .heroSection > div {
@@ -40,15 +40,5 @@
 @media (min-width: 1024px) {
   .heroSection {
     height: calc(100vh - 70px);
-  }
-
-  .heroSection {
-    --contentWidth: 1024px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .heroSection {
-    --contentWidth: 1440px;
   }
 }
