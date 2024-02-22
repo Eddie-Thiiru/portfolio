@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { motion } from "framer-motion";
 import { BsGithub } from "react-icons/bs";
 import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
 import odinBookImg from "../images/odin-book-screenshot.png";
@@ -17,26 +18,46 @@ const ProjectCard = ({
   className,
 }) => {
   return (
-    <div className={`${className} project`}>
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+      className={`${className} project`}
+    >
       <header className="projectHeader">
         <div>
           <h3>{title}</h3>
           <p>{description}</p>
         </div>
         <nav className="projectLinks">
-          <a href={liveSite} title="Live Site">
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            href={liveSite}
+            title="Live Site"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FiArrowUpRight />
-          </a>
-          <a href={github} title="Github">
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            href={github}
+            title="Github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <BsGithub />
-          </a>
+          </motion.a>
         </nav>
       </header>
       <div className="projectImgWrapper">
         <img src={imageURL} alt="" className="projectScreenshot1" />
         <img src={imageURL} alt="" className="projectScreenshot2" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

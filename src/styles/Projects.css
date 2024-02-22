@@ -16,7 +16,6 @@
 .project {
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s ease-in-out;
 }
 
 .project1 {
@@ -141,9 +140,5 @@
 
   .projectLinks a[title="Github"]:hover {
     background-color: #f9fafb;
-  }
-
-  .project:hover {
-    transform: scale(1.1);
   }
 }

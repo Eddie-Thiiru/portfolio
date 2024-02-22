@@ -3,6 +3,7 @@
 .heroSection {
   position: relative;
   --contentWidth: 1250px;
+  height: calc(100vh - 70px);
   background-color: #1f2632;
   display: grid;
   grid-template-rows: 2fr 1fr;
@@ -33,7 +34,7 @@
 .heroSection h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: clamp(4rem, 10vw, 12rem);
+  font-size: clamp(6rem, 10vw, 12rem);
   line-height: 1;
   align-self: center;
 }
@@ -80,11 +81,5 @@
   }
   100% {
     opacity: 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .heroSection {
-    height: calc(100vh - 70px);
   }
 }
