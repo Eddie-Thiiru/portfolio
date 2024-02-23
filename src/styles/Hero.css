@@ -3,7 +3,7 @@
 .heroSection {
   position: relative;
   --contentWidth: 1250px;
-  height: calc(100vh - 70px);
+  height: calc(100dvh - 70px);
   background-color: #1f2632;
   display: grid;
   grid-template-rows: 2fr 1fr;
